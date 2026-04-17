@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adejare Isaac — Profile Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <article data-testid="test-profile-card" aria-label="Profile card for Adejare Isaac">
+
+    <div class="hero">
+      <figure class="avatar-wrap">
+        <img
+          data-testid="test-user-avatar"
+          src="Professional Picture .png"
+          alt="smiling portrait photo"
+          width="120"
+          height="120"
+        />
+        <figcaption class="sr-only">Adejare Isaac</figcaption>
+        <span class="online-dot" aria-label="Online"></span>
+      </figure>
+    </div>
+
+    <div class="body">
+
+      <header class="name-block">
+        <h1 data-testid="test-user-name">Adejare Isaac</h1>
+        <span class="role-badge">Frontend Developer</span>
+      </header>
+
+      <div class="time-row" role="status" aria-live="polite" aria-atomic="true">
+        <span class="label">Current Time in Milliseconds:</span>
+        <time data-testid="test-user-time" id="epoch-display" aria-label="Current time in milliseconds">
+          <!-- filled by JS -->
+        </time>
+        <span>ms</span>
+      </div>
+
+      <!-- Bio -->
+      <p data-testid="test-user-bio">
+        Adejare Isaac is a Medical Biochemistry student with a growing focus on frontend development, web technologies, and digital problem-solving. He is actively building skills in creating accessible, responsive, and user-centered interfaces using modern web practices, while also engaging in project management and tech-driven initiatives. His direction is centered on developing practical digital solutions and contributing meaningfully to innovative technology ecosystems.
+      </p>
+
+      <!-- Hobbies + Dislikes -->
+      <div class="grid">
+        <section aria-labelledby="hobbies-heading">
+          <div class="list-section">
+            <h2 id="hobbies-heading"><span class="icon">✦</span> Hobbies</h2>
+            <ul data-testid="test-user-hobbies">
+              <li>Reading and continuous learning</li>
+              <li>Coding and building frontend projects</li>
+              <li>Exploring web design and UI/UX patterns</li>
+              <li>Participating in tech communities and student leadership</li>
+            </ul>
+          </div>
+        </section>
+
+        <section aria-labelledby="dislikes-heading">
+          <div class="list-section">
+            <h2 id="dislikes-heading"><span class="icon">✕</span> Dislikes</h2>
+            <ul data-testid="test-user-dislikes">
+              <li>Poorly structured or unclean code</li>
+              <li>Lack of attention to detail</li>
+              <li>Disorganized workflows</li>
+              <li>Ignoring accessibility and usability standards</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <nav data-testid="test-user-social-links" aria-label="Matt's social media profiles">
+        <h2>Connect</h2>
+        <ul class="social-list">
+          <li>
+            <a
+              data-testid="test-user-social-twitter"
+              href="https://twitter.com/adejareisaac"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Adejare Isaac on Twitter — @adejareisaac"
+            >
+
+              <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+              @adejareisaac
+            </a>
+          </li>
+          <li>
+            <a
+              data-testid="test-user-social-linkedin"
+              href="https://linkedin.com/in/adisaac"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Adejare Isaac on LinkedIn"
+            >
+  
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              Adejare Isaac
+            </a>
+          </li>
+          <li>
+            <a
+              data-testid="test-user-social-github"
+              href="https://github.com/adejareisaac"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Adejare Isaac on GitHub"
+            >
+
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </article>
+  <script src="main.js"></script>
+
+</body>
+</html>
+</html>
